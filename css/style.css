@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box
+}
+:root{
+    font-size: 62.5%;
+}
+body{
+    background: hsl(30, 38%, 92%);
+    font-size: 1.4rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.img_box2{
+    display: none;
+}
+.main_section{
+    height: 100vh;
+}
+.container{
+    background:hsl(0, 0%, 100%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 65rem;
+    border-radius: 1.4rem;
+}
+.container .img_box1{
+    width: 50%;
+    float: left;
+}
+.container .text_box{
+    width: 50%;
+    float: right;
+    padding: 2.8rem;
+}
+.container::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.container .img_box1 img{
+    display: inline-block;
+    width: 100%;
+    border-top-left-radius: 1.4rem;
+    border-bottom-left-radius: 1.4rem;
+}
+.container .text_box .item_name p{
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 2.2rem;
+    letter-spacing: 0.5em;
+    line-height: 1rem;
+}
+.container .text_box .item_heading p{
+    color: hsl(212, 21%, 14%);
+    font-size: 3.7rem;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    line-height: 3rem;
+    margin-bottom: 2.5rem;
+}
+.container .text_box .item_content p{
+    font-size: 1.7rem;
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+    margin-bottom: 2.5rem;
+}
+.container .text_box .item_price p{
+    float: left;
+    color: hsl(158, 36%, 37%);
+    font-size: 3.7rem;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+}
+.container .text_box .price .old_price p{
+    text-decoration: line-through;
+    padding-top: 1.5rem;
+    margin-right: 6rem;
+    float: right;
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+}
+.price::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.container .text_box .btn{
+    color: #ffffff;
+    background: hsl(158, 36%, 37%);
+    display: inline-block;
+    padding: 0.8em 4em;
+    margin: 2.2rem 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 1.4rem;
+}
+.container .text_box .btn img{
+    float: left;
+}
+.container .text_box .btn p{
+    color: #ffffff;
+    float: right;
+    padding-left: 0.4em;
+}
+.btn::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.container .text_box a:hover{
+    background: hsl(157, 90%, 12%);
+}
+@media(max-width:700px){
+    :root{
+        font-size: 55%;
+    }
+    .img_box2{
+        display: block;
+    }
+    .img_box1{
+        display: none;
+    }
+    .img_box2 img{
+        width: 30rem;
+        border-top-right-radius: 1.5rem;
+        border-top-left-radius: 1.5rem;
+    }
+    .container{
+        width: 30rem;
+    }
+    .container .img_box1{
+        width: 100%;
+        float: none;
+    }
+    .container .text_box{
+        width: 100%;
+        float: none;
+        padding: 2rem;
+    }
+}
